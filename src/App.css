@@ -1,33 +1,133 @@
+html,body {
+  line-height: 1.6;
+  font-size: 16pt
+}
+
+.Hyperlink {
+  text-decoration: none;
+}
+
 .App {
-  text-align: left;
+  width: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Landing {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px 0px 20px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.Me {
+  border-radius: 50%;
+  width: 300px;
+  padding: 20px 0px 20px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Landing > .Greeting > .Name {
+  font-size: 32pt;
+}
+
+.Contact {
+  height: 50px;
+  margin: 10px;
+}
+
+.Intro {
+  background-color: #eee;
+  display: flex;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  justify-content: center;
+}
+
+.Intro > .About {
+  width: 60%;
+}
+
+.Experiences {
+  background-color: #fff;
+  padding: 40px 10px 40px 10px;
+}
+
+.Experience {
+  display: grid;
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  grid-template-columns: 30% auto;
+}
+
+.Logo {
+  width: 100%;
+  max-width: 300px;
+  min-width: 100px;
+  border-radius: 20%;
+  padding: 0px 0px 20px;
+}
+
+.Right {
+  padding: 0px 50px 24px;
+}
+
+.Experience > .Right > .Role {
+  color: #5e9516;
+  font-size: 20pt;
+}
+
+.Experience > .Right > .Company {
+  font-size: 18pt;
+}
+
+.Schools {
+  background-color: #eee;
+  padding: 40px 10px 40px 10px;
+}
+
+.School {
+  display: grid;
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  grid-template-columns: 30% auto;
+}
+
+.School > .Right > .Name {
+  color: #5e9516;
+  font-size: 20pt;
+}
+
+.School > .Right > .Degree {
+  font-size: 18pt;
+}
+
+.Skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Skill {
+  display: grid;
+  width: 60%;
+  align-items: center;
+  grid-template-columns: 50% auto;
+}
+
+.Skill > .Type {
+  font-size: 20pt;
+  color: #5e9516;
+  min-width: 12ch;
+}
+
+.Skill > .List {
+  padding: 20px 0px 20px 100px;
+  list-style: none;
 }

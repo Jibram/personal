@@ -1,4 +1,4 @@
-import mePicture from "../images/me.png";
+import mePicture from "../images/me.jpg";
 import gmailLogo from "../images/gmail.png";
 import linkedinLogo from "../images/linkedIn.png";
 import githubLogo from "../images/github.png";

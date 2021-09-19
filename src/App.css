@@ -1,14 +1,11 @@
-html,body {
+html,
+body {
   line-height: 1.6;
-  font-size: 16pt
+  font-size: 16pt;
 }
 
 .Hyperlink {
   text-decoration: none;
-}
-
-.App {
-  width: 100%;
 }
 
 .Landing {
@@ -17,22 +14,26 @@ html,body {
   align-items: center;
   justify-content: center;
   padding: 20px 0px 20px 0px;
+  min-width: 300px;
 }
 
 .Me {
   border-radius: 50%;
   width: 300px;
   padding: 20px 0px 20px 0px;
+  max-width: 90%;
 }
 
 .Greeting {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
 }
 
 .Landing > .Greeting > .Name {
   font-size: 32pt;
+  text-align: center;
 }
 
 .Contact {
@@ -43,38 +44,79 @@ html,body {
 .Intro {
   background-color: #eee;
   display: flex;
-  width: 100%;
-  padding: 10px 10px 10px 10px;
+  flex-direction: row;
   justify-content: center;
+  margin: auto;
+  width: 100%;
 }
 
 .Intro > .About {
-  width: 60%;
+  padding: 20px 0px 20px 0px;
+  margin: auto;
+  width: 90%;
+  text-align: center;
 }
 
 .Experiences {
   background-color: #fff;
-  padding: 40px 10px 40px 10px;
+  padding: 20px 0px 20px 0px;
 }
 
 .Experience {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: auto;
-  width: 80%;
-  align-items: center;
-  grid-template-columns: 30% auto;
+  padding: 20px 0px 20px 0px;
+  width: 90%;
 }
 
-.Logo {
-  width: 100%;
-  max-width: 300px;
-  min-width: 100px;
-  border-radius: 20%;
-  padding: 0px 0px 20px;
+@media only screen and (max-width: 1200px) {
+  .Experience {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.Left {
+  min-width: 300px;
+  width: 30%;
 }
 
 .Right {
-  padding: 0px 50px 24px;
+  min-width: 300px;
+  width: 70%;
+  margin-left: 20px;
+}
+
+.Logo {
+  border: 0px 40px 0px 40px;
+  border-radius: 20%;
+  padding-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Left {
+    margin: auto;
+    width: 50%;
+  }
+  .Right {
+    width: 100%;
+  }
+  .Logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 200px;
+    max-width: 300px;
+  }
 }
 
 .Experience > .Right > .Role {
@@ -88,15 +130,22 @@ html,body {
 
 .Schools {
   background-color: #eee;
-  padding: 40px 10px 40px 10px;
+  padding: 40px 0px 40px 0px;
+  width: 100%;
 }
 
 .School {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: auto;
-  width: 80%;
-  align-items: center;
-  grid-template-columns: 30% auto;
+  width: 90%;
+
+  padding: 20px 0px 20px 0px;
+}
+
+.School > .Left {
+  width: 50%;
 }
 
 .School > .Right > .Name {
@@ -108,26 +157,52 @@ html,body {
   font-size: 18pt;
 }
 
+@media only screen and (max-width: 1200px) {
+  .School {
+    flex-direction: column;
+  }
+}
+
 .Skills {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0px 40px 0px;
 }
 
 .Skill {
-  display: grid;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
   width: 60%;
   align-items: center;
-  grid-template-columns: 50% auto;
 }
 
 .Skill > .Type {
   font-size: 20pt;
   color: #5e9516;
-  min-width: 12ch;
+  width: 50%;
+  min-width: 300px;
+  text-align: right;
 }
 
 .Skill > .List {
-  padding: 20px 0px 20px 100px;
   list-style: none;
+  padding-left: 20px;
+}
+
+.App {
+  min-width: 300px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Skill {
+    flex-direction: column;
+  }
+  .Skill > .List {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .Skill > .Type {
+    text-align: center;
+  }
 }

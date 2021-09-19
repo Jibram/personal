@@ -7,16 +7,14 @@ import Experiences from "./components/Experiences";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 
-function App() {
-  return (
-    <div className="App">
-        <Landing />
-        <Intro />
-        <Experiences />
-        <Education />
-        <Skills />
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Landing />
+    <Intro />
+    <Experiences />
+    <Education />
+    <Skills />
+  </div>
+);
 
 export default App;

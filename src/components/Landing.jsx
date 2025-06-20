@@ -1,4 +1,3 @@
-import React from "react";
 import Contacts from "./Contacts";
 import content from "./content";
 
@@ -7,10 +6,10 @@ const Landing = () => {
     <div className="Landing">
       <div className="Greeting">
         <img className="Me" src={content.ME.PHOTO} alt={"Me"} />
-        <div className="Name">
+        <h1 className="Name">
           {content.ME.FIRSTNAME}
           <nobr>{content.ME.LASTNAME}</nobr>
-        </div>
+        </h1>
       </div>
       <Contacts />
     </div>

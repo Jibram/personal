@@ -8,37 +8,39 @@ body {
   text-decoration: none;
 }
 
+.App {
+  min-width: 300px;
+}
+
 .Landing {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px 0px 20px 0px;
-  min-width: 300px;
 }
 
-.Me {
-  border-radius: 50%;
-  width: 300px;
-  padding: 20px 0px 20px 0px;
-  max-width: 90%;
-}
-
-.Greeting {
+.Landing>.Greeting {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
 }
 
-.Landing > .Greeting > .Name {
-  font-size: 32pt;
+.Landing>.Greeting>.Me {
+  border-radius: 50%;
+  width: 300px;
+  max-width: 85%;
+}
+
+.Landing>.Greeting>.Name {
   text-align: center;
+  max-width: 85%;
 }
 
 .Contact {
   height: 50px;
-  margin: 10px;
+  width: 50px;
+  margin: 0px 10px 0px 10px;
 }
 
 .Intro {
@@ -46,89 +48,82 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: auto;
-  width: 100%;
 }
 
-.Intro > .About {
-  padding: 20px 0px 20px 0px;
-  margin: auto;
-  width: 90%;
+.Intro>.About {
   text-align: center;
+  max-width: 85%;
 }
 
 .Experiences {
   background-color: #fff;
-  padding: 20px 0px 20px 0px;
-}
-
-.Experience {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
-  padding: 20px 0px 20px 0px;
-  width: 90%;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media only screen and (max-width: 1200px) {
-  .Experience {
+@media only screen and (max-width: 1199px) {
+  .Experiences>.Experience {
+    max-width: 85%;
+    width: 85%;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  .Experiences>.Experience>.ExpLogo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
 }
 
-.Left {
-  min-width: 300px;
-  width: 30%;
+@media only screen and (min-width: 1200px) {
+  .Experiences>.Experience {
+    max-width: 85%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .Experiences>.Experience>.ExpLogo {
+    display: flex;
+    align-items: center;
+    /*Vertical Alignment*/
+    margin-right: 40px;
+  }
 }
 
-.Right {
-  min-width: 300px;
-  width: 70%;
-  margin-left: 20px;
+.Experiences>.Experience>.ExpLogo>.LogoWrapper {
+  display: flex;
+  justify-content: center;
+  /*Horizontal Alignment*/
 }
 
-.Logo {
-  border: 0px 40px 0px 40px;
+.Experiences>.Experience>.ExpLogo>.LogoWrapper>.Logo {
   border-radius: 20%;
-  padding-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  min-width: 200px;
-  max-width: 300px;
+  width: 300px;
 }
 
-@media only screen and (max-width: 1200px) {
-  .Left {
-    margin: auto;
-    width: 50%;
-  }
-  .Right {
-    width: 100%;
-  }
-  .Logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    min-width: 200px;
-    max-width: 300px;
-  }
+.Experience>.ExpDescription {
+  max-width: 1000px;
 }
 
-.Experience > .Right > .Role {
+.Experience>.ExpDescription>.Role {
   color: #5e9516;
   font-size: 20pt;
 }
 
-.Experience > .Right > .Company {
+.Experience>.ExpDescription>.Company {
   font-size: 18pt;
 }
 
 .Schools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #eee;
   padding: 40px 0px 40px 0px;
   width: 100%;
@@ -136,31 +131,37 @@ body {
 
 .School {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
-  width: 90%;
-
+  flex-direction: column;
+  width: 85%;
   padding: 20px 0px 20px 0px;
 }
 
-.School > .Left {
-  width: 50%;
+.School>.Left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.School > .Right > .Name {
-  color: #5e9516;
-  font-size: 20pt;
+.School>.Left>.Logo {
+  width: 300px;
+  border-radius: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0px;
 }
 
-.School > .Right > .Degree {
-  font-size: 18pt;
+.School>.Right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media only screen and (max-width: 1200px) {
-  .School {
-    flex-direction: column;
-  }
+.School>.Right>.Coursework {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  list-style: none;
+  padding-left: 0px;
 }
 
 .Skills {
@@ -172,37 +173,21 @@ body {
 .Skill {
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 60%;
   align-items: center;
 }
 
-.Skill > .Type {
+.Skill>.Type {
   font-size: 20pt;
   color: #5e9516;
   width: 50%;
   min-width: 300px;
-  text-align: right;
+  text-align: center;
 }
 
-.Skill > .List {
+.Skill>.List {
+  padding-left: 0px;
   list-style: none;
-  padding-left: 20px;
-}
-
-.App {
-  min-width: 300px;
-}
-
-@media only screen and (max-width: 1200px) {
-  .Skill {
-    flex-direction: column;
-  }
-  .Skill > .List {
-    padding-left: 0px;
-    text-align: center;
-  }
-  .Skill > .Type {
-    text-align: center;
-  }
+  text-align: center;
 }

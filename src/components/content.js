@@ -1,13 +1,13 @@
-import mePicture from "../images/me.jpg";
-import gmailLogo from "../images/gmail.png";
-import linkedinLogo from "../images/linkedIn.png";
-import githubLogo from "../images/github.png";
-import ancestryLogo from "../images/ancestry.png";
-import googleLogo from "../images/google.png";
-import ucmcvlLogo from "../images/ucmcvl.png";
-import palsLogo from "../images/pals.png";
-import ucmLogo from "../images/ucmerced.png";
-import yonseiLogo from "../images/yonsei.png";
+import mePicture from "../images/me.webp";
+import gmailLogo from "../images/gmail.webp";
+import linkedinLogo from "../images/linkedIn.webp";
+import githubLogo from "../images/github.webp";
+import ancestryLogo from "../images/ancestry.webp";
+import googleLogo from "../images/google.webp";
+import ucmcvlLogo from "../images/ucmcvl.webp";
+import palsLogo from "../images/pals.webp";
+import ucmLogo from "../images/ucmerced.webp";
+import yonseiLogo from "../images/yonsei.webp";
 
 var content = {
   ME: {
@@ -16,7 +16,7 @@ var content = {
     LASTNAME: "Jimenez-Loza",
   },
   ABOUT:
-    "I'm a software engineer located in San Francisco, CA that has worked in a variety of different concentrations within software engineering, notably professional front end web development.",
+    "I'm a software engineer in San Francisco, CA that has 5 years of combined experience in applied artificial intelligence, machine learning, and front end.",
   CONTACT: [
     {
       SRC: gmailLogo,
@@ -42,8 +42,13 @@ var content = {
       ROLE: "Software Engineer",
       LOCATION: "Mountain View, CA",
       START: "10/2021",
-      END: "Present",
-      INFO: [],
+      END: "11/2024",
+      INFO: [
+        "Launched several ads auction improvements on the Travel Ads team for over 2.5% revenue gains ($XX M).",
+        "Empowered DNN models via feature engineering to improve accuracy by over 10% on different surfaces as the team expanded to many more verticals.",
+        "Leveraged Vizier to create a simulation pipeline to tune hyperparameters in models after each release, selecting better configurations than would be in manual tuning.",
+        "Advocated and implemented region-specific modeling to reach goals without negatively affecting small GEOs.",
+      ],
     },
     {
       LOGO: ancestryLogo,
@@ -133,9 +138,9 @@ var content = {
     },
   ],
   SKILLS: {
-    LANGUAGES: ["Javascript", "Python", "C++", "Java", "Matlab"],
-    TECHNOLOGIES: ["React.js", "Redux.js", "Flow.js", "Node.js", "OpenCV"],
-    MISC: ["English", "Spanish", "Korean"],
+    LANGUAGES: ["Javascript", "Python", "C++", "SQL", "Java", "Matlab"],
+    TECHNOLOGIES: ["Tensorflow", "TFX", "OpenCV", "Scikit", "GWS", "gRPC", "React.js", "Node.js", "Redux.js",  "Jest", "Cypress", "Jenkins"],
+    MISC: ["English 🇺🇸", "Español 🇲🇽", "한국어 🇰🇷"],
   },
   AWARDS: [],
 };

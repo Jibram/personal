@@ -1,68 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My Vite-based React Project
+This is a basic template for a Vite-based React resume website. It provides a quick setup for modern web development with React, leveraging Vite's fast development server and optimized build process.
 
-## Available Scripts
+Getting Started
+Follow these steps to get your development environment set up and run the project locally.
 
-In the project directory, you can run:
+Prerequisites
+Before you begin, ensure you have Node.js and npm (or yarn/pnpm) installed on your system.
 
-### `npm start`
+Node.js: Download & Install Node.js (includes npm)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Installation
+Clone the repository:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+git clone https://github.com/your-username/your-repository-name.git
+cd your-repository-name
 
-### `npm test`
+Replace your-username/your-repository-name.git with the actual URL of your GitHub repository.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install dependencies:
+Use your preferred package manager:
 
-### `npm run build`
+npm install
+# or
+yarn install
+# or
+pnpm install
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Running the Development Server
+To start the development server and begin coding, run:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application will typically be available at http://localhost:5173/ (or another port if 5173 is in use). Vite will automatically open it in your browser.
 
-### `npm run eject`
+Build for Production
+When you're ready to deploy your application, you can create an optimized production build:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+npm run build
+# or
+yarn build
+# or
+pnpm build
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This command will compile your React application and place the optimized static assets in the ./dist directory. This dist folder is what you would deploy to a static hosting service.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Previewing the Production Build
+You can preview the production build locally before deployment:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+npm run preview
+# or
+yarn preview
+# or
+pnpm preview
 
-## Learn More
+This will serve the static files from the dist directory, allowing you to test how your production build behaves. It typically runs on http://localhost:4173/.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Happy Hacking!
